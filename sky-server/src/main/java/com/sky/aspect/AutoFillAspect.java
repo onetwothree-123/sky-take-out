@@ -38,7 +38,7 @@ public class AutoFillAspect {
 
         //获取当前被拦截方法上的数据库操作类型
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();//ctrl+alt+b向下转型转成signature它的一个子接口(方法签名对象)
-        AutoFill autoFill = signature.getMethod().getAnnotation(AutoFill.class);//获得方法上的注解对象
+        AutoFill autoFill = signature.getMethod().getAnnotation(AutoFill.class);//获得方法上的注解对象（反射）
         OperationType operationType = autoFill.value();//获得数据库操作类型
 
         //获取当前被拦截方法的参数--实体对象
