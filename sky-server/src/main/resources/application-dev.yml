@@ -11,3 +11,11 @@ sky:
     access-key-id: LTAI5tSX86awqzMFQLWqCLzz
     access-key-secret: NPSESZzJXfQoLvZG89zHHaUU9uFcM2
     bucket-name: web-framework-hh
+  redis:
+    host: localhost
+    password: '123456'
+    port: 6379
+    database: 10
+  wechat:
+    appid: wxccfaafb7b6907d81
+    secret: f351a815202cf7f3f689baf99ba35635
