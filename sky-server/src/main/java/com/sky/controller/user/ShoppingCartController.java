@@ -52,8 +52,8 @@ public class ShoppingCartController {
 
     @DeleteMapping("/clean")
     @ApiOperation("清空购物车")
-    public Result deleteAll(){
-        shoppingCartService.deleteAll();
+    public Result deleteByUserId(){
+        shoppingCartService.deleteByUserId();
         return Result.success();
     }
 

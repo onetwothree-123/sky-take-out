@@ -119,8 +119,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     /**
      * 清空购物车
      */
-    public void deleteAll() {
-        shoppingCartMapper.deleteAll();
+    public void deleteByUserId() {
+        Long userId = BaseContext.getCurrentId();
+        shoppingCartMapper.deleteByUserId(userId);
     }
 
 }
